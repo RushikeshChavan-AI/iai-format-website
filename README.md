@@ -1,14 +1,33 @@
-# IAI Studio marketing site
+﻿# IAI Studio Website
 
-This is the public static website for IAI Studio.
+Static marketing website for IAI Studio.
 
-## Publish on Vercel
+## Local Development
 
-1. Push this repository to GitHub.
-2. Create a new Vercel project from the GitHub repo.
-3. Set the Vercel root directory to `marketing-site`.
-4. Leave the build command empty.
-5. Leave the output directory empty or use `.`.
-6. Deploy.
+```bash
+npm install
+npm run build
+npm run preview
+```
 
-The site is plain HTML/CSS and does not need a build step.
+The build output is generated into `dist/`.
+
+## Deploy On Vercel
+
+Import this GitHub repository in Vercel:
+
+```text
+RushikeshChavan-AI/iai-format-website
+```
+
+Recommended Vercel settings:
+
+```text
+Framework Preset: Other
+Root Directory: .
+Build Command: npm run build
+Output Directory: dist
+Install Command: npm install
+```
+
+The project also includes `vercel.json`, so Vercel should automatically use the correct build command and output directory.
